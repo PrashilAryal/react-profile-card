@@ -1,38 +1,136 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+
+.profile {
+  width: 826px;
+  height: 485px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
+.profile__heading {
+  width: 109px;
+  height: 23px;
+  top: 23px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.15px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  color: #000000;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profile__container {
+  box-sizing: border-box;
+  width: 239px;
+  height: 73px;
+  left: 18px;
+  background-color: #f4f4f4;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile__container__card {
+  box-sizing: border-box;
+  width: 211px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  display: flex;
+  text-align: center;
+  margin-left: 14px;
+  text-align: left;
+  line-height: 14px;
+}
+.active {
+  background-color: #19e26a;
+}
+.inactive {
+  background-color: maroon;
+}
+.profile__container__card__status {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-bottom: 0;
+  margin-top: 7px;
+  margin-left: 3px;
+}
+.profile__container__card__namebox {
+  margin-left: 7px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.profile__container__card__namebox > h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  letter-spacing: 0.15px;
+  color: #000000;
+  text-align: left;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 14px;
+}
+.profile__container__card__namebox > p {
+  height: 14px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.15px;
+  color: #767676;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.profile__container__card__imgbox {
+  width: 40px;
+  height: 40px;
+  top: 13px;
+  background-color: #922ee0;
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.profile__container__card__imgbox__name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #ffffff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.progress {
+  position: relative;
+  width: 164px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50px;
+  margin-top: 7px;
+  margin-bottom: 13px;
+}
+.profile__container__card__progressbar {
+  margin: 0;
+  width: 0;
+  height: 6px;
+  margin-left: 0;
+  background-color: #922ee0;
+  border-radius: 50px;
+  margin-top: 7px;
+  z-index: 1;
+  margin-left: 0;
+  text-align: left;
 }
